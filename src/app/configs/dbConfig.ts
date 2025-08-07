@@ -6,7 +6,6 @@ export default defineConfig({
         "./src/db/models/*.ts"
     ],
     out: "./src/db/migrations",
-    driver: "pglite",
     dialect: "postgresql",
     dbCredentials:{
         url: appsettings.db_config.connString as string,
